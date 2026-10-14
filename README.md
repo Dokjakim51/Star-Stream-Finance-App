@@ -2,8 +2,6 @@
 
 **Dashboard de finanzas personales con Google Apps Script, Google Sheets y Google Drive.** Incluye diseño responsive de estilo galáctico, constelaciones SVG/CSS, registros de ingresos y gastos, metas, estadísticas, cuentas y planificación.
 
-> **Versión de portafolio sin pantalla de bloqueo.** Este repositorio contiene únicamente el código fuente. No incluye cuentas reales, movimientos personales, fotografías, recibos, contraseñas ni identificadores de hojas de Google. Cada persona que quiera ejecutarlo debe configurar su **propia** instalación de Google Apps Script.
-
 ## Funcionalidades
 
 - **Cuentas:** registra cuentas en DOP y USD, consulta saldos e historiales.
