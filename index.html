@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#020a20">
+  <meta name="color-scheme" content="dark">
+  <title>Star Stream</title>
+  <?!= include('styles'); ?>
+</head>
+<body>
+  <div class="cosmos-scene" aria-hidden="true">
+    <div class="nebula nebula-left"></div>
+    <div class="nebula nebula-right"></div>
+    <div class="galaxy-haze"></div>
+    <svg class="constellation-map constellation-map-a" viewBox="0 0 620 460" preserveAspectRatio="none">
+      <g class="constellation-lines">
+        <path d="M26 116L92 82L145 132L207 66L269 112L336 84L397 146L470 106L558 148"/>
+        <path d="M92 82L105 28M145 132L126 198M207 66L231 22M269 112L286 176M397 146L374 213M470 106L505 43"/>
+      </g>
+      <g class="constellation-stars">
+        <circle cx="26" cy="116" r="3"/><circle cx="92" cy="82" r="4"/><circle cx="145" cy="132" r="3.5"/><circle cx="207" cy="66" r="4"/><circle cx="269" cy="112" r="3"/><circle cx="336" cy="84" r="3.5"/><circle cx="397" cy="146" r="4"/><circle cx="470" cy="106" r="3"/><circle cx="558" cy="148" r="4"/><circle cx="105" cy="28" r="2.5"/><circle cx="126" cy="198" r="2.5"/><circle cx="231" cy="22" r="2.5"/><circle cx="286" cy="176" r="2.5"/><circle cx="374" cy="213" r="2.5"/><circle cx="505" cy="43" r="2.5"/>
+      </g>
+    </svg>
+    <svg class="constellation-map constellation-map-b" viewBox="0 0 520 520" preserveAspectRatio="none">
+      <g class="constellation-lines">
+        <path d="M34 393L89 337L151 361L209 291L277 315L332 247L389 277L468 218"/>
+        <path d="M89 337L60 271M151 361L180 425M209 291L176 238M277 315L302 381M332 247L363 186M389 277L438 336"/>
+      </g>
+      <g class="constellation-stars">
+        <circle cx="34" cy="393" r="3"/><circle cx="89" cy="337" r="4"/><circle cx="151" cy="361" r="3"/><circle cx="209" cy="291" r="4"/><circle cx="277" cy="315" r="3"/><circle cx="332" cy="247" r="4"/><circle cx="389" cy="277" r="3"/><circle cx="468" cy="218" r="4"/><circle cx="60" cy="271" r="2.5"/><circle cx="180" cy="425" r="2.5"/><circle cx="176" cy="238" r="2.5"/><circle cx="302" cy="381" r="2.5"/><circle cx="363" cy="186" r="2.5"/><circle cx="438" cy="336" r="2.5"/>
+      </g>
+    </svg>
+    <svg class="constellation-map constellation-map-c" viewBox="0 0 720 340" preserveAspectRatio="none">
+      <g class="constellation-lines">
+        <path d="M18 224L94 175L174 202L242 133L324 163L402 86L486 126L568 62L693 103"/>
+        <path d="M94 175L78 111M174 202L198 279M242 133L222 64M324 163L354 232M402 86L429 26M486 126L520 206M568 62L609 20"/>
+      </g>
+      <g class="constellation-stars">
+        <circle cx="18" cy="224" r="3"/><circle cx="94" cy="175" r="4"/><circle cx="174" cy="202" r="3"/><circle cx="242" cy="133" r="4.5"/><circle cx="324" cy="163" r="3"/><circle cx="402" cy="86" r="4"/><circle cx="486" cy="126" r="3.5"/><circle cx="568" cy="62" r="4"/><circle cx="693" cy="103" r="3"/><circle cx="78" cy="111" r="2"/><circle cx="198" cy="279" r="2.5"/><circle cx="222" cy="64" r="2"/><circle cx="354" cy="232" r="2.5"/><circle cx="429" cy="26" r="2"/><circle cx="520" cy="206" r="2.5"/><circle cx="609" cy="20" r="2"/>
+      </g>
+    </svg>
+    <div class="cosmic-orbit orbit-a"></div>
+    <div class="cosmic-orbit orbit-b"></div>
+  </div>
+
+  <div class="app-shell" id="app">
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
+
+    <aside class="sidebar" aria-label="Navegación principal">
+      <div class="sidebar-cosmos" aria-hidden="true"></div>
+      <div class="brand">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 48 48" class="ss86-logo-svg" aria-hidden="true"><path class="logo-tail" d="M4 35C10 30 14 27 20 25"/><path class="logo-core" d="M25 4C26.3 13.3 30.7 18.5 40 21.3C30.4 23.2 25.8 28.3 23.6 40.5C21.8 30.1 17.4 24.6 7 22C16.8 19.7 21.4 14.5 25 4Z"/><path class="logo-spark" d="M10 8L11.7 12.3L16 14L11.7 15.7L10 20L8.3 15.7L4 14L8.3 12.3Z"/><circle class="logo-dot" cx="39" cy="10" r="2.2"/></svg>
+        </span>
+        <div>
+          <strong><span>STAR</span> <em>STREAM</em></strong>
+          <small>Tu universo financiero</small>
+        </div>
+      </div>
+
+      <nav class="side-nav" id="desktopNav">
+        <button class="nav-item" type="button" data-page="inicio"><span class="nav-icon" data-icon="home"></span><span>Inicio</span></button>
+        <button class="nav-item" type="button" data-page="movimientos"><span class="nav-icon" data-icon="swap"></span><span>Movimientos</span></button>
+        <button class="nav-item" type="button" data-page="metas"><span class="nav-icon" data-icon="target"></span><span>Metas</span></button>
+        <button class="nav-item" type="button" data-page="planificacion"><span class="nav-icon" data-icon="calendar"></span><span>Planificación</span></button>
+        <button class="nav-item" type="button" data-page="estadisticas"><span class="nav-icon" data-icon="chart"></span><span>Estadísticas</span></button>
+        <button class="nav-item" type="button" data-page="cuentas"><span class="nav-icon" data-icon="wallet"></span><span>Cuentas</span></button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-quote"><span>✦</span><p>La disciplina de hoy construye la libertad de mañana.</p></div>
+        <button class="nav-item" type="button" data-page="configuracion"><span class="nav-icon" data-icon="settings"></span><span>Configuración</span></button>
+        <div class="version-chip">STAR STREAM · v0.8.18 Public</div>
+      </div>
+    </aside>
+
+    <main class="main-shell">
+      <header class="topbar">
+        <div class="mobile-brand" aria-label="Star Stream">
+          <span class="brand-logo" aria-hidden="true"><svg viewBox="0 0 48 48" class="ss86-logo-svg" aria-hidden="true"><path class="logo-tail" d="M4 35C10 30 14 27 20 25"/><path class="logo-core" d="M25 4C26.3 13.3 30.7 18.5 40 21.3C30.4 23.2 25.8 28.3 23.6 40.5C21.8 30.1 17.4 24.6 7 22C16.8 19.7 21.4 14.5 25 4Z"/><path class="logo-spark" d="M10 8L11.7 12.3L16 14L11.7 15.7L10 20L8.3 15.7L4 14L8.3 12.3Z"/><circle class="logo-dot" cx="39" cy="10" r="2.2"/></svg></span>
+          <strong><span>STAR</span> <em>STREAM</em></strong>
+        </div>
+
+        <div class="page-heading">
+          <button class="header-profile-avatar" id="headerProfileAvatar" type="button" aria-label="Abrir configuración de perfil"></button>
+          <div class="page-heading-copy">
+            <span class="eyebrow" id="pageEyebrow">STAR STREAM · v0.8.18</span>
+            <h1 id="pageTitle">Inicio</h1>
+            <p id="pageSubtitle">Tu dinero, claro y bajo control.</p>
+          </div>
+        </div>
+
+        <div class="topbar-actions">
+          <div class="desktop-period-switch" id="desktopPeriodSwitch" aria-label="Período del panel">
+            <button type="button" class="active" data-dashboard-period="1M">Este mes</button>
+            <button type="button" data-dashboard-period="3M">Últimos 3 meses</button>
+            <button type="button" data-dashboard-period="12M">Este año</button>
+          </div>
+          <button class="icon-button global-search-button" type="button" data-go="movimientos" aria-label="Buscar movimientos"><span data-icon="search"></span></button>
+          <button class="icon-button notification-button" id="notificationButton" type="button" aria-label="Notificaciones"><span id="notificationIcon"></span><span class="notification-badge" id="notificationBadge" hidden>0</span></button>
+          <button class="icon-button mobile-settings" id="mobileSettings" type="button" aria-label="Configuración"></button>
+          <button class="button button-primary" id="headerAccount" type="button"><span data-icon="plus"></span><span>Nueva cuenta</span></button>
+        </div>
+      </header>
+
+      <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+
+      <section class="view" id="view" aria-live="polite">
+        <div class="skeleton-grid" aria-label="Cargando información">
+          <div class="skeleton skeleton-hero"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton skeleton-wide"></div><div class="skeleton skeleton-wide"></div>
+        </div>
+      </section>
+    </main>
+
+    <button class="fab" id="fab" type="button" aria-label="Registrar movimiento"></button>
+
+    <nav class="bottom-nav" id="mobileNav" aria-label="Navegación móvil">
+      <button class="bottom-item" type="button" data-page="inicio"><span data-icon="home"></span><small>Inicio</small></button>
+      <button class="bottom-item" type="button" data-page="movimientos"><span data-icon="swap"></span><small>Movimientos</small></button>
+      <button class="bottom-item" type="button" data-page="metas"><span data-icon="target"></span><small>Metas</small></button>
+      <button class="bottom-item" id="mobileContextNav" type="button" data-page="planificacion"><span data-icon="calendar"></span><small>Planificación</small></button>
+      <button class="bottom-item" type="button" data-page="cuentas"><span data-icon="wallet"></span><small>Cuenta</small></button>
+    </nav>
+  </div>
+<div id="modalRoot"></div>
+
+  <div id="receiptLibConfig" data-jsqr="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js" data-tesseract="https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js" hidden></div>
+
+  <?!= include('scripts'); ?>
+</body>
+</html>
